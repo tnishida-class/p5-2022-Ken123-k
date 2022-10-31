@@ -1,7 +1,7 @@
 // 練習問題「心臓の鼓動のように大きくなったり小さくなったりする円」
 let count;
 let cycle;
-let s = 2; s++
+let s = 2; s += 2;
 
 function setup(){
  
