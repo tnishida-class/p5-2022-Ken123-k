@@ -4,15 +4,30 @@
 function setup(){
   createCanvas(400, 400);
   background(255);
-  balloon("I love keyakizaka46");
+  regularPolygon(3, 111,21,15,0);
+  balloon("I love keyakizaka46",0,0,0,255);
+  
 }
 
-function balloon(t){
+function balloon(t,bc,rx,ry,tc){
   let w = textWidth(t);
   let h = textAscent() + textDescent();
   let p = 2;
-  fill(0);
-  rect(0, 0, w + p * 2, h + p * 2);
-  fill(255);
-  text(t, p, h + p);
+  fill(bc);
+  rect(rx, ry, w + p * 2, h + p * 2);
+
+  fill(tc);
+  text(t, rx + p, ry + h + p);
+}
+
+function regularPolygon(n, cx, cy, r,bc){
+  beginShape();
+  for(var i = 0; i < n; i++){
+    let theta = TWO_PI * i * 1 / n - QUARTER_PI - 0.3 ;
+    let x = cx + cos(theta) * r;
+    let y = cy + sin(theta) * r;
+    vertex(x,y);
+    fill(bc)
+  }
+  endShape(CLOSE);
 }
