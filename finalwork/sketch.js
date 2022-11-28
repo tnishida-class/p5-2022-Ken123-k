@@ -89,6 +89,8 @@ function draw() {
   fill(255);
   text(txt,95,50,width,height);
   textSize(40);
+  text("製作時間4時間",95,150);
+  
   
   //赤い花にとまったとき
   if (mouseIsPressed & mouseX > 80 && mouseX < 120 & mouseY > 230 && mouseY < 270){
