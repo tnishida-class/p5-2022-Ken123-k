@@ -158,7 +158,7 @@ function draw() {
   }
   
   //おばけキャベツにとまったとき
-  if(mouseIsPressed & mouseX > 550 && mouseX < width & mouseY > 0 && mouseY < 300){
+  if(mouseIsPressed & mouseX >950 && mouseX < 1450 & mouseY > 50 && mouseY < 550){
     background(255,255,240);
     fill(0);
     text("これはキャベツです。", 200, 320)
