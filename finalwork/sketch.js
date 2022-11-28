@@ -95,7 +95,7 @@ function draw() {
     background(0);
     fill(255);
     text("モンシロチョウは", 200, 320);
-    text("赤色を認識できない。。", 200, 360);
+    text("赤色を認識できないはず。。", 200, 360);
     fill(255,255,0);
     text("Umm...Y.. You are strange!" , 200, 420);
     textSize(40);
