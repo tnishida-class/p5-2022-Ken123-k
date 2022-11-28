@@ -83,7 +83,7 @@ function draw() {
   
   //おばけキャベツ
   fill(30,205,50);
-  cabbage(12, 800 , 100 , 300);
+  cabbage(12, 1200 , 300 , 300);
   
   //You are a cabbage butterfly.
   fill(255);
